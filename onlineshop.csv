@@ -1,0 +1,464 @@
+"DATE","USER_ID","AGE","GENDER","TYPE","CREDIT_SCORE","LIFETIME","PAYMENT_METHOD","TURNOVER","SENDBACK","VIDEO_AD","CONVERTED"
+2023-10-02,"cardiB",27,"female",NA,3,8,"bank transfer",44,FALSE,FALSE,0
+2023-10-02,"natalie_hershlag",42,"female",NA,4,10,"BNPL",34,FALSE,FALSE,0
+2023-10-02,"babe_ruth",48,"male",1,2,12,"BNPL",34,FALSE,FALSE,0
+2023-10-02,"homlesspistachio",60,"male",1,5,9,"paypal",500,FALSE,FALSE,0
+2023-10-02,"chrstian_hauff",93,"male",1,5,12,"credit card",43,FALSE,TRUE,0
+2023-10-02,"marc_sinclair",36,"male",1,4,5,"bank transfer",47,FALSE,TRUE,1
+2023-10-03,"ron_swanson76",56,"male",NA,5,12,"BNPL",286,FALSE,TRUE,0
+2023-10-03,"fred_firestone",35,"male",1,5,11,"BNPL",48,FALSE,TRUE,0
+2023-10-03,"amanda_missinger",24,"female",1,5,5,"paypal",625,FALSE,TRUE,0
+2023-10-03,"marc_sinclair",36,"male",1,4,5,"bank transfer",40,FALSE,TRUE,0
+2023-10-03,"fred-johnson",37,"male",1,4,11,"paypal",42,FALSE,FALSE,0
+2023-10-04,"jessica_jones",27,"female",NA,4,2,"credit card",31,FALSE,TRUE,0
+2023-10-04,"dorothy_parker",56,"female",NA,3,8,"paypal",32,FALSE,FALSE,0
+2023-10-04,"dustybatter",28,"male",1,4,4,"credit card",42,FALSE,TRUE,0
+2023-10-04,"usurpgam",48,"male",1,5,8,"paypal",41,FALSE,FALSE,0
+2023-10-04,"marc_sinclair",36,"male",1,4,5,"bank transfer",306,FALSE,FALSE,0
+2023-10-04,"tombishop",25,"female",1,1,0,"BNPL",502,FALSE,TRUE,1
+2023-10-05,"cardiB",27,"female",NA,3,8,"bank transfer",39,FALSE,FALSE,0
+2023-10-05,"natalie_hershlag",42,"female",NA,4,10,"BNPL",444,FALSE,TRUE,0
+2023-10-05,"terraforming_mars",54,"male",1,5,12,"BNPL",40,FALSE,TRUE,0
+2023-10-05,"helmut_weissinger",27,"male",1,2,9,"paypal",39,FALSE,TRUE,0
+2023-10-05,"julianne1",47,"female",1,2,11,"bank transfer",35,FALSE,FALSE,1
+2023-10-05,"xiao_peng_peng",29,"female",1,5,11,"credit card",423,FALSE,FALSE,1
+2023-10-06,"ron_swanson76",56,"male",NA,5,12,"BNPL",293,FALSE,FALSE,0
+2023-10-06,"dorothy_parker",56,"female",NA,3,8,"paypal",51,FALSE,FALSE,1
+2023-10-06,"marylin2",23,"female",NA,5,4,"paypal",367,FALSE,FALSE,1
+2023-10-06,"dianehall",26,"female",NA,1,1,"BNPL",385,FALSE,TRUE,0
+2023-10-06,"julian22",54,"male",1,3,9,"bank transfer",50,FALSE,FALSE,0
+2023-10-06,"terraforming_mars",54,"male",1,5,12,"BNPL",35,FALSE,FALSE,0
+2023-10-06,"tombishop",25,"female",1,1,0,"BNPL",42,FALSE,FALSE,0
+2023-10-06,"Duc_le_vu",88,"male",1,2,12,"bank transfer",44,FALSE,FALSE,0
+2023-10-07,"michaelbertolina",35,"male",NA,3,1,"paypal",38,FALSE,FALSE,1
+2023-10-07,"dustybatter",28,"male",1,4,4,"credit card",198,FALSE,TRUE,0
+2023-10-07,"julian22",54,"male",1,3,9,"bank transfer",35,FALSE,TRUE,0
+2023-10-08,"ron_swanson76",56,"male",NA,5,12,"BNPL",296,FALSE,FALSE,0
+2023-10-08,"babe_ruth",48,"male",1,2,12,"BNPL",45,FALSE,TRUE,0
+2023-10-08,"volkswagen1",34,"male",1,4,7,"credit card",47,FALSE,TRUE,1
+2023-10-08,"chrstian_hauff",93,"male",1,5,12,"credit card",38,FALSE,FALSE,1
+2023-10-08,"bruce_besson1",32,"male",1,4,5,"bank transfer",37,FALSE,TRUE,0
+2023-10-08,"jennifer_linn",28,"female",1,4,9,"BNPL",46,FALSE,FALSE,0
+2023-10-08,"frederic_larousee",38,"male",1,4,10,"BNPL",39,FALSE,TRUE,0
+2023-10-09,"dorothy_parker",56,"female",NA,3,8,"paypal",43,FALSE,FALSE,0
+2023-10-09,"julian22",54,"male",1,3,9,"bank transfer",300,FALSE,TRUE,0
+2023-10-09,"catesby_harington",30,"male",1,4,0,"paypal",37,FALSE,TRUE,1
+2023-10-10,"dianehall",26,"female",NA,1,1,"BNPL",544,FALSE,TRUE,0
+2023-10-10,"eilleen_brown",53,"female",1,4,12,"paypal",373,FALSE,FALSE,0
+2023-10-10,"eatonline",36,"male",1,5,9,"credit card",49,FALSE,FALSE,0
+2023-10-10,"usurpgam",48,"male",1,5,8,"paypal",36,FALSE,TRUE,1
+2023-10-10,"stefanschmidt",55,"male",1,4,8,"paypal",35,FALSE,FALSE,0
+2023-10-10,"elaine_marie",23,"female",1,5,2,"bank transfer",35,FALSE,TRUE,0
+2023-10-10,"suratali",37,"male",2,4,12,"bank transfer",163,FALSE,TRUE,0
+2023-10-10,"david1970",50,"male",1,5,10,"paypal",44,FALSE,TRUE,0
+2023-10-10,"tombishop",25,"female",1,1,0,"BNPL",38,FALSE,TRUE,0
+2023-10-10,"Gingin_xang",53,"male",1,4,12,"bank transfer",33,FALSE,TRUE,0
+2023-10-11,"ron_swanson76",56,"male",NA,5,12,"BNPL",288,FALSE,TRUE,0
+2023-10-11,"michael_caine",53,"male",NA,4,8,"credit card",34,FALSE,FALSE,0
+2023-10-11,"dianehall",26,"female",NA,1,1,"bank transfer",32,FALSE,FALSE,0
+2023-10-11,"brian-close",23,"male",1,3,1,"BNPL",47,FALSE,TRUE,1
+2023-10-11,"laura_smith",47,"female",2,5,12,"bank transfer",102,FALSE,TRUE,0
+2023-10-11,"takethis",33,"male",1,3,7,"bank transfer",49,FALSE,TRUE,1
+2023-10-11,"takethis",33,"male",1,3,7,"bank transfer",333,FALSE,TRUE,0
+2023-10-11,"volkswagen1",34,"male",1,4,7,"credit card",325,FALSE,TRUE,0
+2023-10-11,"mr.smith",37,"male",1,4,8,"BNPL",47,FALSE,FALSE,0
+2023-10-11,"mr.smith",37,"male",1,4,8,"BNPL",314,FALSE,TRUE,1
+2023-10-12,"ron_swanson76",56,"male",NA,5,12,"BNPL",651,FALSE,FALSE,0
+2023-10-12,"michael_caine",53,"male",NA,4,8,"credit card",451,FALSE,FALSE,0
+2023-10-12,"chrstian_hauff",93,"male",1,5,12,"credit card",49,FALSE,FALSE,0
+2023-10-12,"julian22",54,"male",1,3,9,"bank transfer",41,TRUE,TRUE,0
+2023-10-12,"thomas_miller",39,"male",1,2,12,"BNPL",50,FALSE,TRUE,0
+2023-10-12,"suratali",37,"male",2,4,12,"bank transfer",325,FALSE,FALSE,1
+2023-10-12,"marc_sinclair",36,"male",1,4,5,"bank transfer",381,FALSE,TRUE,0
+2023-10-12,"jennifer_linn",28,"female",1,4,9,"BNPL",620,FALSE,TRUE,0
+2023-10-13,"ron_swanson76",56,"male",NA,5,12,"BNPL",293,FALSE,TRUE,0
+2023-10-13,"ralf_mitchell",51,"male",NA,4,6,"bank transfer",46,FALSE,FALSE,0
+2023-10-13,"volkswagen1",34,"male",1,4,7,"credit card",369,FALSE,TRUE,1
+2023-10-13,"suratali",37,"male",2,4,12,"bank transfer",156,FALSE,TRUE,0
+2023-10-13,"julianne1",47,"female",1,2,11,"BNPL",562,FALSE,FALSE,0
+2023-10-13,"catesby_harington",30,"male",1,4,0,"paypal",478,FALSE,TRUE,0
+2023-10-13,"tombishop",25,"female",1,1,0,"BNPL",44,FALSE,TRUE,0
+2023-10-14,"ralf_mitchell",51,"male",NA,4,6,"bank transfer",44,FALSE,FALSE,1
+2023-10-14,"rose_leslie",56,"female",NA,4,10,"credit card",621,FALSE,TRUE,1
+2023-10-14,"sid_james",45,"male",1,4,10,"bank transfer",372,TRUE,TRUE,0
+2023-10-14,"mr.smith",37,"male",1,4,8,"BNPL",44,FALSE,FALSE,0
+2023-10-14,"fred-johnson",37,"male",1,4,11,"paypal",33,FALSE,FALSE,0
+2023-10-15,"cardiB",27,"female",NA,3,8,"bank transfer",42,FALSE,TRUE,1
+2023-10-15,"natalie_hershlag",42,"female",NA,4,10,"BNPL",35,FALSE,FALSE,0
+2023-10-15,"catesby_harington",30,"male",1,4,0,"paypal",34,FALSE,FALSE,1
+2023-10-16,"eilleen_brown",53,"female",1,4,12,"paypal",49,FALSE,FALSE,0
+2023-10-16,"mr.smith",37,"male",1,4,8,"BNPL",39,FALSE,FALSE,0
+2023-10-16,"terraforming_mars",54,"male",1,5,12,"BNPL",33,FALSE,TRUE,0
+2023-10-16,"mard_moe",35,"male",1,4,7,"BNPL",47,FALSE,FALSE,0
+2023-10-16,"berry_gordy_florida",34,"male",1,4,12,"credit card",33,FALSE,TRUE,0
+2023-10-16,"peter_horowitz",34,"male",1,2,12,"BNPL",48,FALSE,FALSE,0
+2023-10-16,"frederic_larousee",38,"male",1,4,10,"BNPL",47,FALSE,TRUE,0
+2023-10-17,"natalie_hershlag",42,"female",NA,4,10,"BNPL",357,TRUE,FALSE,0
+2023-10-17,"jackie_gleason",23,"male",1,4,12,"bank transfer",42,FALSE,FALSE,0
+2023-10-17,"takethis",33,"male",1,3,7,"bank transfer",48,FALSE,FALSE,0
+2023-10-17,"marcmiller",43,"male",1,4,7,"bank transfer",40,FALSE,FALSE,0
+2023-10-17,"fred_firestone",35,"male",1,5,11,"BNPL",45,FALSE,FALSE,0
+2023-10-17,"mathiasstanger",24,"male",1,2,10,"credit card",44,FALSE,TRUE,0
+2023-10-17,"tara_over",37,"female",2,4,12,"paypal",109,TRUE,TRUE,0
+2023-10-17,"suratali",37,"male",2,4,12,"bank transfer",107,FALSE,FALSE,1
+2023-10-17,"Duc_le_vu",88,"male",1,2,12,"bank transfer",40,FALSE,FALSE,0
+2023-10-17,"Duc_le_vu",88,"male",1,2,12,"bank transfer",84,FALSE,TRUE,1
+2023-10-18,"david_daiches",37,"male",NA,5,11,"BNPL",34,FALSE,FALSE,0
+2023-10-18,"brian-close",23,"male",1,3,1,"BNPL",37,FALSE,TRUE,1
+2023-10-18,"chrstian_hauff",93,"male",1,5,12,"credit card",322,TRUE,TRUE,0
+2023-10-18,"frederic_larousee",38,"male",1,4,10,"BNPL",171,TRUE,FALSE,0
+2023-10-19,"ralf_mitchell",51,"male",NA,4,6,"bank transfer",453,TRUE,TRUE,0
+2023-10-19,"rose_leslie",56,"female",NA,4,10,"credit card",33,FALSE,FALSE,0
+2023-10-19,"fred_firestone",35,"male",1,5,11,"BNPL",34,FALSE,TRUE,0
+2023-10-19,"amanda_missinger",24,"female",1,5,5,"paypal",431,FALSE,TRUE,0
+2023-10-19,"julianne2",21,"female",1,5,0,"BNPL",47,FALSE,FALSE,0
+2023-10-19,"xiao_peng_peng",29,"female",1,5,11,"credit card",392,FALSE,FALSE,0
+2023-10-20,"lacrossefan",59,"male",1,5,12,"credit card",32,FALSE,FALSE,0
+2023-10-20,"suratali",37,"male",2,4,12,"bank transfer",61,FALSE,TRUE,0
+2023-10-20,"marc_sinclair",36,"male",1,4,5,"bank transfer",323,FALSE,FALSE,0
+2023-10-20,"jennifer_linn",28,"female",1,4,9,"BNPL",432,FALSE,TRUE,0
+2023-10-21,"cardiB",27,"female",NA,3,8,"bank transfer",400,FALSE,TRUE,0
+2023-10-21,"fred_firestone",35,"male",1,5,11,"BNPL",42,FALSE,FALSE,0
+2023-10-21,"usurpgam",48,"male",1,5,8,"paypal",32,FALSE,FALSE,0
+2023-10-21,"usurpgam",48,"male",1,5,8,"paypal",44,FALSE,TRUE,0
+2023-10-21,"julian22",54,"male",1,3,9,"bank transfer",43,FALSE,TRUE,1
+2023-10-22,"horst_lüning",50,"male",NA,5,11,"BNPL",39,TRUE,FALSE,0
+2023-10-22,"eilleen_brown",53,"female",1,4,12,"paypal",33,FALSE,TRUE,0
+2023-10-22,"paul_bringer",39,"male",1,5,12,"bank transfer",334,FALSE,FALSE,0
+2023-10-22,"dominik_jung",50,"male",1,4,11,"BNPL",718,FALSE,TRUE,0
+2023-10-23,"ron_burgundy",33,"male",NA,5,11,"paypal",38,FALSE,FALSE,0
+2023-10-23,"takethis",33,"male",1,3,7,"bank transfer",41,FALSE,TRUE,0
+2023-10-23,"usurpgam",48,"male",1,5,8,"paypal",49,FALSE,TRUE,0
+2023-10-23,"usurpgam",48,"male",1,5,8,"paypal",47,FALSE,FALSE,0
+2023-10-23,"mohammadyusuff",34,"male",1,4,8,"paypal",46,FALSE,TRUE,0
+2023-10-23,"catesby_harington",30,"male",1,4,0,"paypal",407,FALSE,TRUE,0
+2023-10-24,"ralf_mitchell",51,"male",NA,4,6,"bank transfer",42,FALSE,TRUE,0
+2023-10-24,"ralf_mitchell",51,"male",NA,4,6,"bank transfer",38,FALSE,TRUE,1
+2023-10-24,"ralf_mitchell",51,"male",NA,4,6,"bank transfer",34,FALSE,FALSE,0
+2023-10-24,"michael_caine",53,"male",NA,4,8,"credit card",315,FALSE,FALSE,0
+2023-10-24,"cardiB",27,"female",NA,3,8,"bank transfer",381,FALSE,FALSE,0
+2023-10-24,"takethis",33,"male",1,3,7,"bank transfer",89,FALSE,FALSE,0
+2023-10-24,"alexander_altmann",35,"male",1,3,6,"paypal",43,FALSE,FALSE,0
+2023-10-25,"natalie_hershlag",42,"female",NA,4,10,"BNPL",41,FALSE,FALSE,0
+2023-10-25,"eilleen_brown",53,"female",1,4,12,"paypal",40,FALSE,FALSE,0
+2023-10-25,"chrstian_hauff",93,"male",1,5,12,"credit card",104,FALSE,TRUE,1
+2023-10-25,"amanda_missinger",24,"female",1,5,5,"paypal",379,FALSE,TRUE,0
+2023-10-25,"tombishop",25,"female",1,1,0,"BNPL",433,FALSE,TRUE,0
+2023-10-25,"maurice_stonewithe",57,"male",1,3,11,"BNPL",304,FALSE,TRUE,0
+2023-10-26,"h_simpson",40,"male",NA,2,10,"BNPL",361,FALSE,TRUE,1
+2023-10-26,"bob-harris",30,"male",NA,4,11,"BNPL",36,FALSE,TRUE,0
+2023-10-26,"david_daiches",37,"male",NA,5,11,"BNPL",41,FALSE,FALSE,0
+2023-10-26,"fred_firestone",35,"male",1,5,11,"BNPL",310,FALSE,FALSE,0
+2023-10-27,"stamatina_elizabeth",59,"female",NA,4,8,"paypal",444,FALSE,FALSE,0
+2023-10-27,"brian-close",23,"male",1,3,1,"BNPL",389,FALSE,TRUE,1
+2023-10-27,"terraforming_mars",54,"male",1,5,12,"BNPL",493,FALSE,TRUE,1
+2023-10-27,"bruceMoore",56,"male",1,5,12,"BNPL",32,FALSE,TRUE,0
+2023-10-27,"Duc_le_vu",88,"male",1,2,12,"bank transfer",36,TRUE,TRUE,1
+2023-10-28,"rose_leslie",56,"female",NA,4,10,"credit card",45,FALSE,FALSE,0
+2023-10-28,"juan_restevez",22,"male",1,5,2,"credit card",310,FALSE,TRUE,0
+2023-10-29,"ralf_mitchell",51,"male",NA,4,6,"bank transfer",375,FALSE,FALSE,0
+2023-10-29,"dianehall",26,"female",NA,1,1,"bank transfer",48,FALSE,TRUE,0
+2023-10-29,"volkswagen1",34,"male",1,4,7,"credit card",365,FALSE,FALSE,0
+2023-10-29,"ben_thomas",22,"male",1,4,0,"bank transfer",31,FALSE,TRUE,0
+2023-10-29,"xiao_peng_peng",29,"female",1,5,11,"credit card",39,FALSE,TRUE,0
+2023-10-30,"natalie_hershlag",42,"female",NA,4,10,"BNPL",352,FALSE,TRUE,0
+2023-10-30,"tombishop",25,"female",1,1,0,"BNPL",645,FALSE,TRUE,0
+2023-10-30,"xiao_peng_peng",29,"female",1,5,11,"credit card",41,FALSE,FALSE,0
+2023-10-31,"babe_ruth",48,"male",1,2,12,"BNPL",390,FALSE,FALSE,0
+2023-10-31,"maurice_stonewithe",57,"male",1,3,11,"BNPL",37,FALSE,TRUE,1
+2023-11-01,"tombishop",25,"female",1,1,0,"BNPL",644,FALSE,FALSE,1
+2023-11-02,"dianehall",26,"female",NA,1,1,"bank transfer",45,FALSE,FALSE,0
+2023-11-02,"babe_ruth",48,"male",1,2,12,"BNPL",43,FALSE,FALSE,0
+2023-11-02,"chrstian_hauff",93,"male",1,5,12,"credit card",35,FALSE,TRUE,1
+2023-11-02,"t_bleu",90,"male",1,3,12,"paypal",499,FALSE,TRUE,1
+2023-11-02,"fred-johnson",37,"male",1,4,11,"paypal",47,FALSE,FALSE,0
+2023-11-03,"samanthamars",49,"female",1,4,12,"credit card",161,FALSE,TRUE,1
+2023-11-03,"shaniarainbow",22,"female",1,5,12,"BNPL",625,FALSE,FALSE,0
+2023-11-03,"jackie_gleason",23,"male",1,4,12,"bank transfer",46,FALSE,TRUE,0
+2023-11-03,"mr.smith",37,"male",1,4,8,"BNPL",47,FALSE,TRUE,1
+2023-11-04,"mathiasstanger",24,"male",1,2,10,"credit card",46,FALSE,TRUE,0
+2023-11-04,"stefanschmidt",55,"male",1,4,8,"paypal",34,FALSE,TRUE,0
+2023-11-04,"Duc_le_vu",88,"male",1,2,12,"BNPL",147,FALSE,FALSE,0
+2023-11-04,"fred-johnson",37,"male",1,4,11,"paypal",40,FALSE,FALSE,0
+2023-11-05,"david1970",50,"male",1,5,10,"paypal",48,FALSE,TRUE,0
+2023-11-05,"mitchryder",40,"male",1,4,12,"credit card",466,FALSE,TRUE,1
+2023-11-05,"fred-johnson",37,"male",1,4,11,"paypal",35,FALSE,TRUE,0
+2023-11-06,"cardiB",27,"female",NA,3,8,"bank transfer",41,FALSE,TRUE,0
+2023-11-06,"mathiasstanger",24,"male",1,2,10,"BNPL",440,FALSE,TRUE,1
+2023-11-06,"Duc_le_vu",88,"male",1,2,12,"BNPL",330,FALSE,TRUE,0
+2023-11-07,"dianehall",26,"female",NA,1,1,"BNPL",387,FALSE,TRUE,0
+2023-11-07,"takethis",33,"male",1,3,7,"bank transfer",50,FALSE,TRUE,1
+2023-11-07,"trucy",27,"female",1,4,7,"BNPL",38,FALSE,FALSE,0
+2023-11-07,"frederic_larousee",38,"male",1,4,10,"BNPL",39,TRUE,TRUE,0
+2023-11-08,"rose_leslie",56,"female",NA,4,10,"credit card",41,FALSE,TRUE,0
+2023-11-08,"natalie_hershlag",42,"female",NA,4,10,"BNPL",38,FALSE,TRUE,0
+2023-11-08,"laura_smith",47,"female",2,5,12,"bank transfer",371,TRUE,FALSE,0
+2023-11-08,"joanah_hamilton",37,"female",1,3,12,"bank transfer",34,TRUE,FALSE,0
+2023-11-08,"jennifer_linn",28,"female",1,4,9,"BNPL",389,FALSE,TRUE,0
+2023-11-09,"dustybatter",28,"male",1,4,4,"credit card",38,FALSE,TRUE,0
+2023-11-09,"networkman",38,"male",1,4,11,"bank transfer",41,FALSE,FALSE,0
+2023-11-09,"mr.smith",37,"male",1,4,8,"BNPL",164,FALSE,FALSE,0
+2023-11-09,"xiao_peng_peng",29,"female",1,5,11,"credit card",42,FALSE,FALSE,0
+2023-11-10,"laura_smith",47,"female",2,5,12,"bank transfer",530,FALSE,TRUE,0
+2023-11-10,"usurpgam",48,"male",1,5,8,"paypal",35,FALSE,FALSE,0
+2023-11-11,"cardiB",27,"female",NA,3,8,"bank transfer",163,FALSE,TRUE,1
+2023-11-11,"babe_ruth",48,"male",1,2,12,"BNPL",340,FALSE,FALSE,0
+2023-11-11,"pretzelfrog",57,"male",1,5,9,"BNPL",363,FALSE,TRUE,0
+2023-11-11,"emily_stone",22,"female",1,4,12,"paypal",499,FALSE,TRUE,0
+2023-11-11,"tombishop",25,"female",1,1,0,"BNPL",43,FALSE,FALSE,0
+2023-11-11,"Duc_le_vu",88,"male",1,2,12,"bank transfer",33,TRUE,TRUE,0
+2023-11-11,"fred-johnson",37,"male",1,4,11,"paypal",337,FALSE,FALSE,0
+2023-11-12,"ron_swanson76",56,"male",NA,5,12,"BNPL",642,FALSE,TRUE,0
+2023-11-12,"michael_caine",53,"male",NA,4,8,"credit card",44,FALSE,FALSE,0
+2023-11-12,"bob-harris",30,"male",NA,4,11,"BNPL",45,FALSE,FALSE,0
+2023-11-12,"eilleen_brown",53,"female",1,4,12,"paypal",44,FALSE,TRUE,1
+2023-11-12,"volkswagen1",34,"male",1,4,7,"credit card",35,FALSE,TRUE,0
+2023-11-12,"jelena_jstowitsch",23,"female",1,4,12,"paypal",401,FALSE,TRUE,0
+2023-11-12,"xiao_peng_peng",29,"female",1,5,11,"credit card",35,FALSE,FALSE,0
+2023-11-13,"eilleen_brown",53,"female",1,4,12,"paypal",48,FALSE,TRUE,0
+2023-11-13,"volkswagen1",34,"male",1,4,7,"credit card",32,FALSE,TRUE,0
+2023-11-13,"terraforming_mars",54,"male",1,5,12,"BNPL",47,FALSE,TRUE,0
+2023-11-13,"marc_sinclair",36,"male",1,4,5,"bank transfer",44,FALSE,TRUE,0
+2023-11-13,"jennifer_linn",28,"female",1,4,9,"BNPL",520,TRUE,FALSE,0
+2023-11-14,"ralf_mitchell",51,"male",NA,4,6,"bank transfer",38,FALSE,TRUE,0
+2023-11-14,"brian-close",23,"male",1,3,1,"BNPL",33,FALSE,FALSE,0
+2023-11-14,"mathiasstanger",24,"male",1,2,10,"credit card",46,FALSE,FALSE,0
+2023-11-14,"alexander_altmann",35,"male",1,3,6,"paypal",45,FALSE,FALSE,0
+2023-11-14,"david1970",50,"male",1,5,10,"paypal",31,FALSE,TRUE,1
+2023-11-15,"mr.smith",37,"male",1,4,8,"BNPL",36,TRUE,TRUE,0
+2023-11-15,"tara_over",37,"female",2,4,12,"paypal",114,FALSE,FALSE,0
+2023-11-16,"rose_leslie",56,"female",NA,4,10,"credit card",43,FALSE,TRUE,0
+2023-11-16,"natalie_hershlag",42,"female",NA,4,10,"BNPL",85,FALSE,FALSE,0
+2023-11-16,"eilleen_brown",53,"female",1,4,12,"paypal",580,FALSE,TRUE,0
+2023-11-16,"stefanschmidt",55,"male",1,4,8,"paypal",353,FALSE,FALSE,0
+2023-11-16,"gaga_hadid",21,"female",1,3,0,"credit card",637,FALSE,TRUE,0
+2023-11-16,"julianne1",47,"female",1,2,11,"BNPL",498,FALSE,FALSE,0
+2023-11-16,"jennifer_linn",28,"female",1,4,9,"BNPL",584,FALSE,TRUE,0
+2023-11-16,"john_cain",31,"male",1,4,7,"paypal",46,FALSE,TRUE,0
+2023-11-17,"dorothy_parker",56,"female",NA,3,8,"paypal",379,TRUE,FALSE,0
+2023-11-17,"laura_smith",47,"female",2,5,12,"bank transfer",455,FALSE,FALSE,0
+2023-11-17,"eilleen_brown",53,"female",1,4,12,"paypal",45,FALSE,TRUE,0
+2023-11-17,"eilleen_brown",53,"female",1,4,12,"paypal",643,FALSE,FALSE,0
+2023-11-17,"julian22",54,"male",1,3,9,"bank transfer",341,FALSE,TRUE,1
+2023-11-17,"terraforming_mars",54,"male",1,5,12,"BNPL",36,FALSE,TRUE,1
+2023-11-17,"amanda_missinger",24,"female",1,5,5,"paypal",36,FALSE,TRUE,0
+2023-11-17,"stefanschmidt",55,"male",1,4,8,"paypal",91,FALSE,FALSE,0
+2023-11-17,"jennifer_linn",28,"female",1,4,9,"BNPL",37,TRUE,FALSE,0
+2023-11-17,"maurice_stonewithe",57,"male",1,3,11,"BNPL",48,FALSE,TRUE,0
+2023-11-18,"ron_swanson76",56,"male",NA,5,12,"BNPL",299,FALSE,TRUE,0
+2023-11-18,"michael_caine",53,"male",NA,4,8,"credit card",32,FALSE,FALSE,0
+2023-11-18,"david_daiches",37,"male",NA,5,11,"BNPL",33,FALSE,TRUE,0
+2023-11-18,"david-niven",53,"male",1,4,11,"BNPL",32,FALSE,TRUE,0
+2023-11-18,"xiao_peng_peng",29,"female",1,5,11,"credit card",52,FALSE,FALSE,1
+2023-11-19,"michael_caine",53,"male",NA,4,8,"credit card",45,FALSE,TRUE,0
+2023-11-19,"truman-capote",44,"male",2,3,12,"paypal",176,FALSE,FALSE,0
+2023-11-19,"dustybatter",28,"male",1,4,4,"credit card",46,FALSE,FALSE,0
+2023-11-19,"ella_oconnor",57,"female",1,4,12,"bank transfer",38,FALSE,TRUE,0
+2023-11-19,"maurice_stonewithe",57,"male",1,3,11,"BNPL",37,FALSE,FALSE,0
+2023-11-20,"fred_firestone",35,"male",1,5,11,"BNPL",34,FALSE,FALSE,0
+2023-11-20,"mathiasstanger",24,"male",1,2,10,"BNPL",162,FALSE,TRUE,1
+2023-11-20,"lee_kim",55,"female",1,2,12,"BNPL",518,FALSE,FALSE,0
+2023-11-21,"horst_lüning",50,"male",NA,5,11,"BNPL",36,TRUE,FALSE,0
+2023-11-21,"takethis",33,"male",1,3,7,"bank transfer",142,FALSE,FALSE,0
+2023-11-21,"terraforming_mars",54,"male",1,5,12,"BNPL",47,FALSE,TRUE,0
+2023-11-22,"horst_lüning",50,"male",NA,5,11,"BNPL",398,FALSE,TRUE,0
+2023-11-22,"volkswagen1",34,"male",1,4,7,"credit card",31,FALSE,TRUE,1
+2023-11-23,"fred_firestone",35,"male",1,5,11,"BNPL",37,FALSE,TRUE,1
+2023-11-23,"tara_over",37,"female",2,4,12,"paypal",104,FALSE,FALSE,0
+2023-11-23,"catesby_harington",30,"male",1,4,0,"paypal",451,FALSE,FALSE,0
+2023-11-24,"ron_swanson76",56,"male",NA,5,12,"BNPL",704,FALSE,FALSE,0
+2023-11-24,"natalie_hershlag",42,"female",NA,4,10,"BNPL",32,FALSE,FALSE,0
+2023-11-24,"julian22",54,"male",1,3,9,"bank transfer",41,FALSE,FALSE,0
+2023-11-24,"tara_over",37,"female",2,4,12,"paypal",124,FALSE,TRUE,0
+2023-11-24,"marc_sinclair",36,"male",1,4,5,"bank transfer",418,FALSE,FALSE,0
+2023-11-24,"fred-johnson",37,"male",1,4,11,"paypal",49,FALSE,TRUE,0
+2023-11-25,"dorothy_parker",56,"female",NA,3,8,"paypal",39,TRUE,TRUE,0
+2023-11-25,"dianehall",26,"female",NA,1,1,"bank transfer",38,FALSE,TRUE,0
+2023-11-25,"laura_smith",47,"female",2,5,12,"bank transfer",177,FALSE,FALSE,0
+2023-11-26,"dorothy_parker",56,"female",NA,3,8,"paypal",45,FALSE,TRUE,1
+2023-11-26,"cardiB",27,"female",NA,3,8,"bank transfer",35,FALSE,FALSE,0
+2023-11-26,"laura_smith",47,"female",2,5,12,"bank transfer",638,FALSE,TRUE,0
+2023-11-26,"laura_smith",47,"female",2,5,12,"bank transfer",147,FALSE,TRUE,0
+2023-11-26,"takethis",33,"male",1,3,7,"bank transfer",40,FALSE,TRUE,0
+2023-11-26,"marc_sinclair",36,"male",1,4,5,"bank transfer",39,FALSE,TRUE,0
+2023-11-27,"michael_caine",53,"male",NA,4,8,"credit card",50,FALSE,TRUE,0
+2023-11-27,"cardiB",27,"female",NA,3,8,"bank transfer",591,FALSE,TRUE,1
+2023-11-27,"chrstian_hauff",93,"male",1,5,12,"credit card",40,FALSE,TRUE,1
+2023-11-27,"helmut_weissinger",27,"male",1,2,9,"BNPL",302,FALSE,TRUE,0
+2023-11-28,"ron_swanson76",56,"male",NA,5,12,"BNPL",651,FALSE,TRUE,0
+2023-11-28,"ron_swanson76",56,"male",NA,5,12,"BNPL",284,FALSE,TRUE,0
+2023-11-28,"horst_lüning",50,"male",NA,5,11,"BNPL",46,TRUE,TRUE,0
+2023-11-28,"fred_firestone",35,"male",1,5,11,"BNPL",364,FALSE,TRUE,0
+2023-11-28,"david1970",50,"male",1,5,10,"paypal",35,FALSE,FALSE,0
+2023-11-28,"jennifer_linn",28,"female",1,4,9,"BNPL",43,FALSE,FALSE,0
+2023-11-29,"horst_lüning",50,"male",NA,5,11,"BNPL",480,FALSE,TRUE,0
+2023-11-29,"usurpgam",48,"male",1,5,8,"paypal",451,FALSE,FALSE,0
+2023-11-29,"julian22",54,"male",1,3,9,"bank transfer",44,FALSE,FALSE,0
+2023-11-29,"lee_kim",55,"female",1,2,12,"bank transfer",35,FALSE,TRUE,0
+2023-11-29,"lee_kim",55,"female",1,2,12,"BNPL",545,FALSE,FALSE,0
+2023-11-29,"tara_over",37,"female",2,4,12,"paypal",125,FALSE,FALSE,1
+2023-11-29,"bruno_moon",51,"male",1,4,11,"bank transfer",335,FALSE,TRUE,0
+2023-11-30,"eilleen_brown",53,"female",1,4,12,"paypal",31,FALSE,TRUE,0
+2023-11-30,"mr.smith",37,"male",1,4,8,"BNPL",389,TRUE,FALSE,0
+2023-11-30,"juan_restevez",22,"male",1,5,2,"credit card",36,FALSE,FALSE,0
+2023-12-01,"tara_over",37,"female",2,4,12,"paypal",61,FALSE,TRUE,0
+2023-12-01,"xiao_peng_peng",29,"female",1,5,11,"credit card",457,FALSE,FALSE,1
+2023-12-02,"horst_lüning",50,"male",NA,5,11,"BNPL",36,FALSE,FALSE,0
+2023-12-02,"brian-close",23,"male",1,3,1,"BNPL",45,FALSE,FALSE,0
+2023-12-02,"julian22",54,"male",1,3,9,"bank transfer",36,FALSE,FALSE,0
+2023-12-02,"amanda_missinger",24,"female",1,5,5,"paypal",46,FALSE,TRUE,0
+2023-12-02,"david1970",50,"male",1,5,10,"paypal",45,FALSE,FALSE,0
+2023-12-02,"xiao_peng_peng",29,"female",1,5,11,"credit card",41,FALSE,TRUE,0
+2023-12-03,"mathiasstanger",24,"male",1,2,10,"credit card",48,FALSE,TRUE,0
+2023-12-03,"stefanschmidt",55,"male",1,4,8,"paypal",302,FALSE,FALSE,0
+2023-12-03,"suratali",37,"male",2,4,12,"bank transfer",146,FALSE,TRUE,1
+2023-12-03,"david1970",50,"male",1,5,10,"paypal",35,FALSE,FALSE,0
+2023-12-03,"maurice_stonewithe",57,"male",1,3,11,"BNPL",491,FALSE,FALSE,0
+2023-12-03,"maurice_stonewithe",57,"male",1,3,11,"BNPL",367,TRUE,FALSE,0
+2023-12-04,"michael_caine",53,"male",NA,4,8,"credit card",48,FALSE,TRUE,1
+2023-12-04,"volkswagen1",34,"male",1,4,7,"credit card",36,FALSE,FALSE,0
+2023-12-04,"mr.smith",37,"male",1,4,8,"BNPL",50,FALSE,FALSE,0
+2023-12-04,"suratali",37,"male",2,4,12,"bank transfer",332,TRUE,FALSE,0
+2023-12-05,"rip_torn",25,"male",NA,5,8,"BNPL",46,FALSE,TRUE,0
+2023-12-05,"babe_ruth",48,"male",1,2,12,"BNPL",46,FALSE,FALSE,0
+2023-12-06,"ralf_mitchell",51,"male",NA,4,6,"bank transfer",44,FALSE,FALSE,1
+2023-12-06,"takethis",33,"male",1,3,7,"bank transfer",43,FALSE,TRUE,0
+2023-12-06,"dustybatter",28,"male",1,4,4,"credit card",41,FALSE,FALSE,0
+2023-12-06,"dustybatter",28,"male",1,4,4,"credit card",37,FALSE,FALSE,0
+2023-12-07,"laura_smith",47,"female",2,5,12,"bank transfer",612,FALSE,FALSE,0
+2023-12-07,"tara_over",37,"female",2,4,12,"paypal",193,FALSE,FALSE,0
+2023-12-07,"suratali",37,"male",2,4,12,"bank transfer",126,FALSE,FALSE,0
+2023-12-07,"frederic_larousee",38,"male",1,4,10,"BNPL",40,FALSE,FALSE,1
+2023-12-08,"david_daiches",37,"male",NA,5,11,"BNPL",36,FALSE,TRUE,1
+2023-12-08,"usurpgam",48,"male",1,5,8,"paypal",465,FALSE,TRUE,0
+2023-12-08,"maria_sheen",55,"female",1,2,8,"paypal",48,FALSE,FALSE,1
+2023-12-08,"julianne1",47,"female",1,2,11,"BNPL",521,FALSE,FALSE,0
+2023-12-08,"xiao_peng_peng",29,"female",1,5,11,"credit card",48,FALSE,TRUE,1
+2023-12-09,"david_daiches",37,"male",NA,5,11,"BNPL",31,FALSE,FALSE,1
+2023-12-09,"sid_james",45,"male",1,4,10,"bank transfer",43,FALSE,FALSE,0
+2023-12-09,"gunlover",41,"male",1,1,9,"BNPL",180,FALSE,FALSE,0
+2023-12-09,"jennifer_linn",28,"female",1,4,9,"BNPL",441,FALSE,TRUE,0
+2023-12-09,"Duc_le_vu",88,"male",1,2,12,"bank transfer",43,FALSE,FALSE,0
+2023-12-10,"liz_smith",59,"female",NA,3,12,"BNPL",352,FALSE,TRUE,0
+2023-12-10,"rose_leslie",56,"female",NA,4,10,"credit card",40,FALSE,FALSE,0
+2023-12-10,"fred_firestone",35,"male",1,5,11,"BNPL",42,FALSE,TRUE,0
+2023-12-11,"ron_swanson76",56,"male",NA,5,12,"BNPL",294,FALSE,FALSE,0
+2023-12-11,"dorothy_parker",56,"female",NA,3,8,"paypal",484,FALSE,TRUE,0
+2023-12-11,"chrstian_hauff",93,"male",1,5,12,"credit card",45,FALSE,TRUE,1
+2023-12-11,"tara_over",37,"female",2,4,12,"paypal",482,TRUE,TRUE,0
+2023-12-11,"jennifer_linn",28,"female",1,4,9,"BNPL",367,TRUE,TRUE,0
+2023-12-11,"maurice_stonewithe",57,"male",1,3,11,"BNPL",385,FALSE,TRUE,0
+2023-12-12,"horst_lüning",50,"male",NA,5,11,"BNPL",36,TRUE,TRUE,0
+2023-12-12,"dustybatter",28,"male",1,4,4,"credit card",40,FALSE,FALSE,0
+2023-12-12,"terraforming_mars",54,"male",1,5,12,"BNPL",37,FALSE,FALSE,1
+2023-12-12,"stefanschmidt",55,"male",1,4,8,"paypal",307,FALSE,TRUE,0
+2023-12-13,"ron_swanson76",56,"male",NA,5,12,"BNPL",598,FALSE,TRUE,0
+2023-12-13,"michael_caine",53,"male",NA,4,8,"credit card",190,FALSE,TRUE,1
+2023-12-13,"cardiB",27,"female",NA,3,8,"bank transfer",38,TRUE,FALSE,0
+2023-12-13,"dianehall",26,"female",NA,1,1,"bank transfer",49,FALSE,TRUE,1
+2023-12-13,"eilleen_brown",53,"female",1,4,12,"paypal",541,TRUE,FALSE,0
+2023-12-13,"amanda_missinger",24,"female",1,5,5,"paypal",36,FALSE,FALSE,0
+2023-12-13,"suratali",37,"male",2,4,12,"bank transfer",152,FALSE,TRUE,0
+2023-12-13,"tombishop",25,"female",1,1,0,"BNPL",617,FALSE,FALSE,0
+2023-12-13,"xiao_peng_peng",29,"female",1,5,11,"credit card",41,FALSE,FALSE,0
+2023-12-14,"herbert_james_haddock",43,"male",NA,4,11,"credit card",175,FALSE,TRUE,1
+2023-12-14,"michael_caine",53,"male",NA,4,8,"credit card",34,FALSE,FALSE,0
+2023-12-14,"cardiB",27,"female",NA,3,8,"bank transfer",462,FALSE,TRUE,0
+2023-12-14,"rose_leslie",56,"female",NA,4,10,"credit card",49,FALSE,TRUE,0
+2023-12-14,"natalie_hershlag",42,"female",NA,4,10,"BNPL",428,FALSE,FALSE,0
+2023-12-14,"volkswagen1",34,"male",1,4,7,"credit card",41,FALSE,TRUE,0
+2023-12-14,"amanda_missinger",24,"female",1,5,5,"paypal",387,FALSE,TRUE,0
+2023-12-14,"frederic_larousee",38,"male",1,4,10,"BNPL",329,FALSE,FALSE,0
+2023-12-14,"fred-johnson",37,"male",1,4,11,"paypal",35,FALSE,TRUE,0
+2023-12-15,"barney_stinson",52,"male",NA,1,7,"BNPL",473,FALSE,TRUE,0
+2023-12-15,"david_daiches",37,"male",NA,5,11,"BNPL",35,FALSE,TRUE,0
+2023-12-15,"laura_smith",47,"female",2,5,12,"bank transfer",576,FALSE,FALSE,0
+2023-12-15,"fred_firestone",35,"male",1,5,11,"BNPL",43,FALSE,FALSE,0
+2023-12-15,"mathiasstanger",24,"male",1,2,10,"credit card",34,FALSE,FALSE,0
+2023-12-15,"ultimate2000",38,"male",1,5,12,"credit card",43,FALSE,FALSE,1
+2023-12-15,"tara_over",37,"female",2,4,12,"paypal",77,FALSE,TRUE,0
+2023-12-15,"gene_f_erandez",66,"male",2,5,12,"bank transfer",196,FALSE,TRUE,0
+2023-12-15,"Duc_le_vu",88,"male",1,2,12,"BNPL",417,FALSE,FALSE,0
+2023-12-16,"ron_swanson76",56,"male",NA,5,12,"BNPL",282,FALSE,TRUE,0
+2023-12-16,"lisa89",25,"female",NA,4,12,"bank transfer",38,FALSE,FALSE,0
+2023-12-16,"catesby_harington",30,"male",1,4,0,"paypal",340,TRUE,TRUE,1
+2023-12-16,"catesby_harington",30,"male",1,4,0,"paypal",41,FALSE,TRUE,1
+2023-12-16,"catesby_harington",30,"male",1,4,0,"paypal",389,FALSE,FALSE,0
+2023-12-16,"maurice_stonewithe",57,"male",1,3,11,"BNPL",50,FALSE,FALSE,0
+2023-12-17,"usurpgam",48,"male",1,5,8,"paypal",47,FALSE,FALSE,1
+2023-12-17,"mathiasstanger",24,"male",1,2,10,"credit card",34,FALSE,TRUE,0
+2023-12-17,"lee_kim",55,"female",1,2,12,"BNPL",472,FALSE,TRUE,0
+2023-12-17,"david1970",50,"male",1,5,10,"paypal",32,FALSE,FALSE,0
+2023-12-17,"catesby_harington",30,"male",1,4,0,"paypal",31,FALSE,FALSE,0
+2023-12-17,"bruno_moon",51,"male",1,4,11,"bank transfer",389,FALSE,FALSE,0
+2023-12-17,"fred-johnson",37,"male",1,4,11,"paypal",40,FALSE,FALSE,0
+2023-12-18,"babe_ruth",48,"male",1,2,12,"BNPL",44,FALSE,TRUE,0
+2023-12-18,"volkswagen1",34,"male",1,4,7,"credit card",35,FALSE,FALSE,0
+2023-12-18,"tara_over",37,"female",2,4,12,"paypal",576,FALSE,FALSE,0
+2023-12-18,"catesby_harington",30,"male",1,4,0,"paypal",36,FALSE,TRUE,0
+2023-12-19,"julian22",54,"male",1,3,9,"bank transfer",37,FALSE,FALSE,0
+2023-12-19,"terraforming_mars",54,"male",1,5,12,"BNPL",47,FALSE,TRUE,0
+2023-12-19,"amanda_missinger",24,"female",1,5,5,"paypal",33,FALSE,TRUE,0
+2023-12-19,"marc_sinclair",36,"male",1,4,5,"bank transfer",37,FALSE,TRUE,0
+2023-12-19,"frederic_larousee",38,"male",1,4,10,"BNPL",49,FALSE,TRUE,0
+2023-12-20,"brian-close",23,"male",1,3,1,"BNPL",34,FALSE,TRUE,0
+2023-12-20,"laura_smith",47,"female",2,5,12,"bank transfer",179,TRUE,FALSE,1
+2023-12-20,"terraforming_mars",54,"male",1,5,12,"BNPL",39,FALSE,TRUE,1
+2023-12-20,"lee_kim",55,"female",1,2,12,"bank transfer",49,FALSE,TRUE,0
+2023-12-20,"david1970",50,"male",1,5,10,"paypal",32,FALSE,TRUE,0
+2023-12-20,"marc_sinclair",36,"male",1,4,5,"bank transfer",356,FALSE,TRUE,0
+2023-12-20,"frederic_larousee",38,"male",1,4,10,"BNPL",42,FALSE,TRUE,1
+2023-12-20,"Duc_le_vu",88,"male",1,2,12,"bank transfer",48,FALSE,TRUE,0
+2023-12-21,"robert_burns",40,"male",1,2,10,"BNPL",466,FALSE,FALSE,0
+2023-12-21,"Gingin_xang",53,"male",1,4,12,"bank transfer",336,FALSE,FALSE,0
+2023-12-22,"david_daiches",37,"male",NA,5,11,"BNPL",488,FALSE,TRUE,1
+2023-12-22,"brian-close",23,"male",1,3,1,"BNPL",333,FALSE,FALSE,0
+2023-12-22,"mathiasstanger",24,"male",1,2,10,"BNPL",315,FALSE,TRUE,0
+2023-12-22,"marc_sinclair",36,"male",1,4,5,"bank transfer",36,FALSE,FALSE,0
+2023-12-22,"jennifer_linn",28,"female",1,4,9,"BNPL",422,FALSE,FALSE,0
+2023-12-22,"frederic_larousee",38,"male",1,4,10,"BNPL",48,FALSE,FALSE,0
+2023-12-23,"ron_swanson76",56,"male",NA,5,12,"BNPL",633,FALSE,FALSE,0
+2023-12-23,"rip_torn",25,"male",NA,5,8,"BNPL",436,FALSE,TRUE,0
+2023-12-23,"cardiB",27,"female",NA,3,8,"bank transfer",34,FALSE,FALSE,0
+2023-12-23,"laura_smith",47,"female",2,5,12,"bank transfer",188,FALSE,TRUE,0
+2023-12-23,"porsche_driver",51,"male",1,4,10,"BNPL",399,TRUE,FALSE,0
+2023-12-23,"maurice_stonewithe",57,"male",1,3,11,"BNPL",400,FALSE,FALSE,0
+2023-12-24,"dianehall",26,"female",NA,1,1,"BNPL",525,FALSE,TRUE,1
+2023-12-24,"babe_ruth",48,"male",1,2,12,"BNPL",176,TRUE,TRUE,1
+2023-12-24,"megan_f",32,"female",1,3,12,"credit card",353,FALSE,FALSE,0
+2023-12-25,"dorothy_parker",56,"female",NA,3,8,"paypal",630,FALSE,FALSE,0
+2023-12-25,"rose_leslie",56,"female",NA,4,10,"credit card",39,FALSE,TRUE,0
+2023-12-25,"dustybatter",28,"male",1,4,4,"credit card",35,FALSE,FALSE,0
+2023-12-25,"mathiasstanger",24,"male",1,2,10,"credit card",36,FALSE,TRUE,0
+2023-12-25,"mr.smith",37,"male",1,4,8,"BNPL",316,FALSE,TRUE,0
+2023-12-25,"lee_kim",55,"female",1,2,12,"BNPL",642,FALSE,TRUE,1
+2023-12-25,"stefanschmidt",55,"male",1,4,8,"paypal",39,FALSE,FALSE,0
+2023-12-25,"tombishop",25,"female",1,1,0,"BNPL",38,FALSE,FALSE,0
+2023-12-25,"pandit_bhanji",53,"male",1,3,8,"credit card",394,FALSE,FALSE,0
+2023-12-25,"peng_peng",60,"male",2,5,11,"paypal",157,FALSE,TRUE,1
+2023-12-26,"dorothy_parker",56,"female",NA,3,8,"paypal",172,FALSE,FALSE,0
+2023-12-26,"david_daiches",37,"male",NA,5,11,"BNPL",42,FALSE,FALSE,0
+2023-12-26,"robert_burns",40,"male",1,2,10,"credit card",32,FALSE,FALSE,0
+2023-12-26,"takethis",33,"male",1,3,7,"bank transfer",48,FALSE,FALSE,0
+2023-12-26,"lee_kim",55,"female",1,2,12,"bank transfer",43,TRUE,TRUE,0
+2023-12-27,"babe_ruth",48,"male",1,2,12,"BNPL",492,FALSE,TRUE,0
+2023-12-27,"terraforming_mars",54,"male",1,5,12,"BNPL",46,FALSE,TRUE,0
+2023-12-28,"dorothy_parker",56,"female",NA,3,8,"paypal",604,FALSE,TRUE,1
+2023-12-28,"babe_ruth",48,"male",1,2,12,"BNPL",47,FALSE,TRUE,0
+2023-12-28,"chrstian_hauff",93,"male",1,5,12,"credit card",43,FALSE,FALSE,0
+2023-12-28,"maurice_stonewithe",57,"male",1,3,11,"BNPL",34,FALSE,TRUE,1
+2023-12-28,"t_bleu",90,"male",1,3,12,"paypal",39,FALSE,FALSE,0
+2023-12-29,"horst_lüning",50,"male",NA,5,11,"BNPL",384,FALSE,TRUE,0
+2023-12-29,"horst_lüning",50,"male",NA,5,11,"BNPL",46,FALSE,FALSE,1
+2023-12-29,"dianehall",26,"female",NA,1,1,"bank transfer",33,FALSE,FALSE,0
+2023-12-29,"brian-close",23,"male",1,3,1,"BNPL",330,FALSE,FALSE,0
+2023-12-29,"brian-close",23,"male",1,3,1,"BNPL",48,FALSE,FALSE,0
+2023-12-29,"laura_smith",47,"female",2,5,12,"bank transfer",182,FALSE,FALSE,0
+2023-12-29,"lee_kim",55,"female",1,2,12,"BNPL",386,FALSE,FALSE,0
+2023-12-29,"lee_kim",55,"female",1,2,12,"bank transfer",44,FALSE,TRUE,0
+2023-12-30,"rose_leslie",56,"female",NA,4,10,"credit card",451,TRUE,TRUE,0
+2023-12-30,"david-niven",53,"male",1,4,11,"BNPL",318,FALSE,TRUE,0
+2023-12-30,"usurpgam",48,"male",1,5,8,"paypal",46,FALSE,TRUE,0
+2023-12-30,"mr.smith",37,"male",1,4,8,"BNPL",31,FALSE,FALSE,0
+2023-12-30,"amanda_missinger",24,"female",1,5,5,"paypal",78,FALSE,FALSE,0
+2023-12-30,"TH_fouche",57,"male",1,4,11,"BNPL",331,FALSE,TRUE,0

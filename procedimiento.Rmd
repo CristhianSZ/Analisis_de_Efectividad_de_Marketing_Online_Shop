@@ -1,0 +1,81 @@
+---
+title: "Procedimiento"
+author: "Sosa Zurita, Cristhian Rodrigo"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Planificación metodológica
+
+## 1. Entender el Caso de Negocio
+
+### Stakeholders identificados
+
+| Tipo | Stakeholder | Interés |
+|------|-------------|---------|
+| Interno | Marketing | Optimizar campañas y conversiones |
+| Interno | Ventas/Producto | Comportamiento de compra y fidelización |
+| Interno | Finanzas | Riesgo y solvencia |
+| Interno | Analistas de datos | Limpieza, modelado e insights |
+| Externo | Clientes | Datos y comportamiento de compra |
+| Estratégico | Gerencia | Decisiones para aumentar ingresos |
+| Estratégico | Inversores | Métricas de rentabilidad |
+
+### Stakeholder seleccionado: **Equipo de Marketing**
+
+**Objetivo:** Determinar el impacto de los anuncios de video en la tasa de conversión y el volumen de ventas, segmentando por edad y género para identificar audiencias más rentables.
+
+# 2. Crear un Plan de Medición: el plan es una hoja de ruta para la obtención de resultados reales de negocio.
+
+## Definición de éxito:
+Considerando que este análisis es para el equipo de marketing, el éxito se medirá como la capacidad de identificar con precisión si los anuncios en video generan un retorno significativamente mayor (en conversiones y ventas) que otros formatos, permitiendo señalar que segmentos demográficos específicos (por edad y género) responden mejor a esta inversión para optimizar el gasto publicitario futuro.
+
+## Identificación de KPIs (Métricas clave):
+Para cuantificar el éxito, se seguirán las siguientes métricas:
+1. **Tasa de conversión** (Conversion Rate): Porcentaje de usuarios que añadieron el producto al carrito tras ver el anuncio. Es el indicador principal de efectividad del anuncio.
+2. **Volumen Total de Ventas** (Total Turnover): Suma total de los euros generados para evaluar el impacto financiero directo.
+3. **Valor Promedio de Pedido** (AOV): Gasto promedio por transacción para determinar si los anuncios de video atraen clientes de mayor valor.
+4. **Efectividad por Formato**: Comparativa directa del rendimiento entre `VIDEO_AD = TRUE` frente a `VIDEO_AD = FALSE`.
+
+### Documentación de Requisitos (Mapeo de Datos)
+Columnas del dataset:
+- **USER_ID**: Identificador único para el usuario del comercio electrónico.
+- **DATE**: Marca de tiempo que indica la fecha de inicio de sesión en el comercio electrónico.
+- **AGE**: Edad del usuario al momento de visitar el sitio web.
+- **GENDER**: Género del usuario.
+- **TYPE**: Tipo de cliente interno basado en entrevistas telefónicas: 1 = Cliente Estándar, 2 = Connoisseur de Whisky, NA = No entrevistado.
+- **CREDIT_SCORE**: Puntuación crediticia externa del cliente, en una escala de 1 (muy malo) a 5 (excelente).
+- **LIFETIME**: Antigüedad de la cuenta del cliente en años desde su registro inicial.
+- **PAYMENT_METHOD**: Método de pago del cliente: 'BNPL', 'tarjeta de crédito', 'transferencia bancaria' o 'PayPal'.
+- **TURNOVER**: Monto de la compra actual en EUR.
+- **SENDBACK**: Variable dummy que indica si hubo devolución dentro de 2 semanas: 1 (TRUE) = devuelto, 0 (FALSE) = no devuelto.
+- **VIDEO_AD**: Variable dummy que indica el tipo de anuncio mostrado: 1 (TRUE) = anuncio en video, 0 (FALSE) = anuncio de texto/artículo.
+- **CONVERTED**: Variable dummy que indica si el usuario agregó el producto al carrito: 1 (TRUE) = sí, 0 (FALSE) = no.
+
+### 3. Preparación y Limpieza de Datos (Data Prep)
+El objetivo de esta etapa es transformar los datos brutos del archivo `onlineshop.csv` en un estado listo para el análisis, asegurando que los resultados no estén sesgados por errores de entrada. Bajo la premisa de "Garbage In, Garbage Out", la calidad de nuestra base de datos determinará la validez de nuestras recomendaciones. 
+
+#### Control de Calidad (QA) y Limpieza
+Tras un perfilado inicial, se detectaron y corrigieron los siguientes problemas de integridad:
+- **Manejo de Valores Nulos (NAs)**: Se identificó que la columna `TYPE` contenía 116 registros NA, correspondientes a clientes sin entrevista telefónica.
+  - Acción: En lugar de eliminar las filas y perder datos valiosos de ventas, se recodificaron como "3" (representando "No entrevistado") para mantener la consistencia en las agrupaciones futuras.
+- **Estandarización de Tipos de Datos**: Para que R procese correctamente las métricas de marketing, se realizaron ajustes de formato:
+  - Campo `DATE`: Se convirtió a objeto de fecha (POSIXct) para permitir análisis de tendencias temporales.
+  - Campos Lógicos: Se aseguró que `VIDEO_AD`, `SENDBACK` y `CONVERTED` fueran tratados como booleanos (TRUE/FALSE) para facilitar el cálculo de tasas de conversión.
+- **Detección de Duplicados**: Se buscaron registros idénticos (mismo `USER_ID` y misma `DATE`) que pudieran inflar artificialmente el volumen de transacciones y los KPIs de éxito.
+- **Tratamiento de Outliers (Valores Atípicos)**: En la columna `TURNOVER`, se observaron montos extremadamente altos (hasta 718€) que no corresponden al comportamiento del cliente típico (mediana de 48€).
+  - Acción: Se decidió conservar estos valores por ser transacciones reales de clientes "VIP", pero su presencia determinó un cambio fundamental en nuestra estrategia estadística.
+
+#### Ingeniería de Características (Feature Engineering)
+Para enriquecer el análisis demográfico solicitado por Marketing, se creó la variable `AGE_GROUP`. Esta columna segmenta la edad en rangos (18-25, 26-40, 41+) para identificar con precisión qué generación responde mejor a los anuncios de video.
+
+Nota: Durante esta fase, se concluyó que los datos no siguen una distribución normal debido al fuerte sesgo positivo en las ventas. Por lo tanto, el análisis ha migrado de un enfoque paramétrico a uno no paramétrico, priorizando el uso de medianas y rangos intercuartílicos sobre los promedios simples.
+
+### 4. Etapa de Comprender los Datos (Perfilado/EDA)
+Una vez limpia la data, procedemos al Análisis Exploratorio de Datos (EDA) para entender la composición y granularidad de nuestra fuente. Dado el sesgo identificado en el `TURNOVER`, el Box-Plot (Diagrama de Caja) se ha seleccionado como nuestra herramienta analítica principal por las siguientes razones:
+- Muestra la Mediana: A diferencia de la media, la mediana no se deja engañar por los "grandes gastadores", proporcionando una visión real de la compra típica del usuario tras ver un anuncio.
+- Identifica Outliers Visualmente: Permite observar a los clientes VIP que gastan más de 400€ como puntos aislados, ayudando a Marketing a entender si el video atrae tráfico de "alto valor".
+- Compara Distribuciones: Al colocar el grupo de `VIDEO_AD = TRUE` frente al de FALSE, podemos verificar si el "cajón" de la distribución de video está posicionado más arriba, lo que indicaría una mayor disposición al gasto impulsada por el anuncio.
+
+Este perfilado visual nos permite "darle voz a los datos" antes de proceder con las visualizaciones finales y los insights accionables para los stakeholders.
+### 5. Analizar y Visualizar (Darle Voz a los Datos)
