@@ -23,14 +23,14 @@ output: html_document
 
 ### Stakeholder seleccionado: **Equipo de Marketing**
 
-**Objetivo:** Determinar el impacto de los anuncios de video en la tasa de conversión y el volumen de ventas, segmentando por edad y género para identificar audiencias más rentables.
+**Objetivo**: Determinar el impacto de los anuncios de video en la tasa de conversión y el volumen de ventas, segmentando por edad y género para identificar audiencias más rentables.
 
-# 2. Crear un Plan de Medición: el plan es una hoja de ruta para la obtención de resultados reales de negocio.
+## 2. Crear un Plan de Medición: el plan es una hoja de ruta para la obtención de resultados reales de negocio.
 
-## Definición de éxito:
+### 2.1 Definición de éxito:
 Considerando que este análisis es para el equipo de marketing, el éxito se medirá como la capacidad de identificar con precisión si los anuncios en video generan un retorno significativamente mayor (en conversiones y ventas) que otros formatos, permitiendo señalar que segmentos demográficos específicos (por edad y género) responden mejor a esta inversión para optimizar el gasto publicitario futuro.
 
-## Identificación de KPIs (Métricas clave):
+### 2.2 Identificación de KPIs (Métricas clave):
 Para cuantificar el éxito, se seguirán las siguientes métricas:
 1. **Tasa de conversión** (Conversion Rate): Porcentaje de usuarios que añadieron el producto al carrito tras ver el anuncio. Es el indicador principal de efectividad del anuncio.
 2. **Volumen Total de Ventas** (Total Turnover): Suma total de los euros generados para evaluar el impacto financiero directo.
@@ -52,8 +52,8 @@ Columnas del dataset:
 - **VIDEO_AD**: Variable dummy que indica el tipo de anuncio mostrado: 1 (TRUE) = anuncio en video, 0 (FALSE) = anuncio de texto/artículo.
 - **CONVERTED**: Variable dummy que indica si el usuario agregó el producto al carrito: 1 (TRUE) = sí, 0 (FALSE) = no.
 
-### 3. Preparación y Limpieza de Datos (Data Prep)
-El objetivo de esta etapa es transformar los datos brutos del archivo `onlineshop.csv` en un estado listo para el análisis, asegurando que los resultados no estén sesgados por errores de entrada. Bajo la premisa de "Garbage In, Garbage Out", la calidad de nuestra base de datos determinará la validez de nuestras recomendaciones. 
+## 3. Preparación y Limpieza de Datos (Data Prep)
+El objetivo de esta etapa es transformar los datos brutos del archivo `onlineshop.csv` en un estado listo para el análisis, asegurando que los resultados no estén sesgados por errores de entrada. Bajo la premisa de "Garbage In, Garbage Out", la calidad de nuestra base de datos determinará la validez de nuestras recomendaciones.
 
 #### Control de Calidad (QA) y Limpieza
 Tras un perfilado inicial, se detectaron y corrigieron los siguientes problemas de integridad:
@@ -67,15 +67,38 @@ Tras un perfilado inicial, se detectaron y corrigieron los siguientes problemas 
   - Acción: Se decidió conservar estos valores por ser transacciones reales de clientes "VIP", pero su presencia determinó un cambio fundamental en nuestra estrategia estadística.
 
 #### Ingeniería de Características (Feature Engineering)
-Para enriquecer el análisis demográfico solicitado por Marketing, se creó la variable `AGE_GROUP`. Esta columna segmenta la edad en rangos (18-25, 26-40, 41+) para identificar con precisión qué generación responde mejor a los anuncios de video.
+Para enriquecer el análisis demográfico solicitado por Marketing, se creó la variable `AGE_GROUP`. Esta columna segmenta la edad en 4 categorías: 18-25, 26-40, 41-55 y 56+ para identificar con precisión qué generación responde mejor a los anuncios de video.
 
 Nota: Durante esta fase, se concluyó que los datos no siguen una distribución normal debido al fuerte sesgo positivo en las ventas. Por lo tanto, el análisis ha migrado de un enfoque paramétrico a uno no paramétrico, priorizando el uso de medianas y rangos intercuartílicos sobre los promedios simples.
 
-### 4. Etapa de Comprender los Datos (Perfilado/EDA)
+## 4. Etapa de Comprender los Datos (Perfilado/EDA)
 Una vez limpia la data, procedemos al Análisis Exploratorio de Datos (EDA) para entender la composición y granularidad de nuestra fuente. Dado el sesgo identificado en el `TURNOVER`, el Box-Plot (Diagrama de Caja) se ha seleccionado como nuestra herramienta analítica principal por las siguientes razones:
 - Muestra la Mediana: A diferencia de la media, la mediana no se deja engañar por los "grandes gastadores", proporcionando una visión real de la compra típica del usuario tras ver un anuncio.
 - Identifica Outliers Visualmente: Permite observar a los clientes VIP que gastan más de 400€ como puntos aislados, ayudando a Marketing a entender si el video atrae tráfico de "alto valor".
 - Compara Distribuciones: Al colocar el grupo de `VIDEO_AD = TRUE` frente al de FALSE, podemos verificar si el "cajón" de la distribución de video está posicionado más arriba, lo que indicaría una mayor disposición al gasto impulsada por el anuncio.
 
 Este perfilado visual nos permite "darle voz a los datos" antes de proceder con las visualizaciones finales y los insights accionables para los stakeholders.
-### 5. Analizar y Visualizar (Darle Voz a los Datos)
+
+## 5. Analizar y Visualizar (Darle Voz a los Datos)
+
+Objetivo de la etapa
+El propósito fundamental de esta fase es transformar el procesamiento de datos en una narrativa estratégica que permita al Equipo de Marketing decidir sobre la inversión publicitaria. El análisis busca determinar si los anuncios en video (VIDEO_AD) impulsan un retorno superior en conversiones y ventas frente a los formatos tradicionales, identificando nichos de alta rentabilidad por edad y género.
+
+### I. Indicadores de Alto Nivel (BANs)
+Para establecer el contexto del éxito comercial, el análisis comienza con las métricas clave del negocio procesadas tras la limpieza (QA):
+- Volumen Total de Ventas: €80,8 mil (basado en 445 transacciones exitosas)
+- Tasa de Conversión General: 17,1% de los usuarios que interactuaron con el sitio
+- Valor Promedio de Pedido (AOV): €182 por transacción
+- Impacto de Video vs. Texto: Mejora del +125% en la tasa de conversión cuando se utiliza el formato de video
+
+### II. Visualización de Distribución y Verdad Estadística (Box-Plot)
+Debido a que el volumen de compra (TURNOVER) no sigue una distribución normal y presenta un fuerte sesgo positivo, se seleccionó el Box-Plot para comparar los formatos:
+- Comprensión de la Mediana: A diferencia de la media, la mediana de €48 para video frente a €46 para texto proporciona una visión real de la compra típica, eliminando el "ruido" de los grandes gastadores
+- Segmento VIP: La visualización identifica a 44 clientes VIP con gastos superiores a €400 provenientes del grupo de video, representados como puntos aislados (outliers) que no deben ser eliminados, sino fidelizados
+- Validación Técnica: Se aplicó la prueba no paramétrica de Wilcoxon (p-value = 0.1068). Aunque el resultado muestra una tendencia visual positiva clara, estadísticamente el impacto se considera moderado, sugiriendo que el video influye parcialmente y requiere mayor escala para confirmar una causalidad absoluta.
+
+### III. Análisis de Segmentación Demográfica (4 Categorías)
+Utilizando la variable de ingeniería AGE_GROUP, se analizó la receptividad por generaciones:
+- Senior (65+ años): Presentan la mayor ganancia potencial con una tasa de conversión del 50% bajo el formato de video, frente a solo el 11,11% en texto
+- Joven Adulto / Millennials (26-40 años): Se consolidan como el segmento base con una conversión del 24,44% con video, demostrando ser el público más consistente
+- Impacto por Género: El video actúa como un potente amplificador en el segmento masculino, elevando su conversión de un 8,8% a un 26,1% (una mejora del +197%)

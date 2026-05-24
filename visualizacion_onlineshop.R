@@ -1,6 +1,7 @@
 # ==============================================================================
 # ETAPA 5: VISUALIZACIÓN DE RESULTADOS PARA MARKETING
 # ==============================================================================
+
 datos_marketing <- read.csv("onlineshop_clean.csv")
 # 1. Preparar datos para la historia: Tasas de Conversión
 

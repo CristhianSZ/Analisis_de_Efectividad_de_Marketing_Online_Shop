@@ -1,6 +1,8 @@
 # ==============================================================================
-# ETAPA 4: PERFILADO ESTADÍSTICO Y EDA
-# Proyecto: Impacto de Video Ads en Ventas
+# ETAPA 4: Etapa de Comprender los Datos (Perfilado/EDA)
+# Proyecto: Análisis de Efectividad de Campañas de Marketing
+# Stakeholder: Equipo de Marketing
+# Dataset: onlineshop_clean.csv
 # ==============================================================================
 
 # Carga de la data limpia generada en el paso anterior
@@ -8,13 +10,28 @@ datos_marketing <- read.csv("onlineshop_clean.csv")
 
 # 1. Visualización Robusta: Box-Plot de Ventas por Tipo de Anuncio
 # Este gráfico ayudará al Equipo de Marketing a ver el impacto real en el gasto
-boxplot(TURNOVER ~ VIDEO_AD, 
+#boxplot(TURNOVER ~ VIDEO_AD, 
+#        data = datos_marketing,
+#        main = "Distribución de Gasto: Video Ads vs Otros",
+#        xlab = "¿Vio anuncio de video?",
+#        ylab = "Log del Volumen de Compra (Euros)",
+#        col = c("lightblue", "orange"),
+#        notch = TRUE,
+#        log = "y")
+
+boxplot(TURNOVER ~ VIDEO_AD,
         data = datos_marketing,
-        main = "Distribución de Gasto: Video Ads vs Otros",
-        xlab = "¿Vio anuncio de video?",
-        ylab = "Volumen de Compra (Euros)",
         col = c("lightblue", "orange"),
-        notch = TRUE) # El notch ayuda a ver si las medianas difieren significativamente
+        notch = TRUE,
+        outline = FALSE)
+
+stripchart(TURNOVER ~ VIDEO_AD,
+           data = datos_marketing,
+           vertical = TRUE,
+           method = "jitter",
+           pch = 20,
+           col = rgb(0,0,0,0.3),
+           add = TRUE) # El notch ayuda a ver si las medianas difieren significativamente
 
 # 2. Perfilado de Medidas de Posición (No Paramétricas)
 # Calculamos los cuartiles para entender los segmentos de gasto sin sesgos

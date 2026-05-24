@@ -1,5 +1,5 @@
 # ==============================================================================
-# Etapa 4 PREPARACIÓN Y LIMPIEZA DE DATOS (ETL)
+# Etapa 3 PREPARACIÓN Y LIMPIEZA DE DATOS (ETL)
 # Proyecto: Análisis de Efectividad de Campañas de Marketing
 # Stakeholder: Equipo de Marketing
 # Dataset: onlineshop.csv
