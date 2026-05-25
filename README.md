@@ -21,25 +21,25 @@ El proyecto sigue una progresión metodológica rigurosa de 6 niveles (La Raíz 
 ### Etapa 2: Perfilado de Datos (Box-Plot)
 Visualización de la distribución del gasto sin sesgo por tipo de anuncio para identificar medianas reales y outliers (clientes VIP).
 
-![Box-Plot: Distribución de Gasto por Formato de Anuncio](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/Rplot_Distribucion_de_gastos_por_formato_de_anuncio.png)
+![Box-Plot: Distribución de Gasto por Formato de Anuncio](./Rplot_Distribucion_de_gastos_por_formato_de_anuncio.png)
 
 ### Etapa 3: Análisis de Relaciones (Scatter Plot)
 Análisis de covariabilidad entre la edad y el gasto, demostrando una correlación prácticamente nula con línea de tendencia plana.
 
-![Scatter Plot: Relación entre Edad y Gasto](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/Rplot_analisis_de_relacion_edad_vs_volumen_de_compra.png)
+![Scatter Plot: Relación entre Edad y Gasto](./Rplot_analisis_de_relacion_edad_vs_volumen_de_compra.png)
 
 ### Etapa 4: Visualización e Inferencia (Grouped Bar Plot)
 Gráfico de barras agrupado que ilustra la tasa de conversión por grupo de edad segmentada por formato de anuncio.
 
-![Grouped Bar Plot: Conversión por Edad y Formato](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/Rplot_tasa_de_conversion_por_rango_de_edad_y_formato_de_anuncio.png)
+![Grouped Bar Plot: Conversión por Edad y Formato](./Rplot_tasa_de_conversion_por_rango_de_edad_y_formato_de_anuncio.png)
 
 ---
 
-## ️ Visualización Final: Dashboard en Power BI
+## 🖥️ Visualización Final: Dashboard en Power BI
 
 Para facilitar la toma de decisiones ejecutivas por parte de directores y gerentes de marketing, los resultados estadísticos se integraron en un tablero interactivo y dinámico.
 
-*    **Acceso al Dashboard Interactivo:** [Ver Dashboard de Power BI](https://app.powerbi.com/reportEmbed?reportId=08b38379-5b1d-47c1-842b-bcd897e7b3fe&autoAuth=true&ctid=cb9bb30c-78c0-48c2-8aec-b3ddc91e3626)
+*    🔗 **Acceso al Dashboard Interactivo:** <a href="https://app.powerbi.com/reportEmbed?reportId=08b38379-5b1d-47c1-842b-bcd897e7b3fe&autoAuth=true&ctid=cb9bb30c-78c0-48c2-8aec-b3ddc91e3626" target="_blank">Ver Dashboard de Power BI</a>
 
 ---
 
