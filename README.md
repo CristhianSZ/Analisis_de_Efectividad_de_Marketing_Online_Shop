@@ -1,5 +1,9 @@
 # Análisis de Efectividad de Marketing: Online Shop
 
+[![Reporte Stakeholder](https://img.shields.io/badge/Reporte-Stakeholder-blue?style=flat-square&logo=markdown)](./reporte_correo_stakeholder.md)
+[![Metodología](https://img.shields.io/badge/Metodolog%C3%ADa-Procedimiento.Rmd-green?style=flat-square&logo=r)](./procedimiento.Rmd)
+[![Licencia MIT](https://img.shields.io/badge/Licencia-MIT-orange?style=flat-square&logo=open-source-initiative)](./LICENSE)
+
 > [!NOTE]
 > **Propósito del Proyecto:** Este es un proyecto personal desarrollado con el fin de poner en práctica lo aprendido al día en la capacitación de Operador en Análisis de Datos del **CFP 16** (Centro de Formación Profesional N° 16, Ciudad Autónoma de Buenos Aires), integrando programación en R, análisis estadístico descriptivo e inferencial y comunicación orientada a stakeholders.
 
