@@ -37,9 +37,11 @@ Gráfico de barras agrupado que ilustra la tasa de conversión por grupo de edad
 
 ## ️ Visualización Final: Dashboard en Power BI
 
-Para facilitar la toma de decisiones ejecutivas por parte de directores y gerentes de marketing, los resultados estadísticos se integraron en un tablero interactivo y dinámico.
+*   🔗 **Acceso al Dashboard Interactivo (Haga clic en la imagen para abrir en otra pestaña):**
 
-<a href="https://app.powerbi.com/reportEmbed?reportId=08b38379-5b1d-47c1-842b-bcd897e7b3fe&autoAuth=true&ctid=cb9bb30c-78c0-48c2-8aec-b3ddc91e3626" target="_blank">Ver Dashboard de Power BI</a>
+<a href="https://app.powerbi.com/reportEmbed?reportId=08b38379-5b1d-47c1-842b-bcd897e7b3fe&autoAuth=true&ctid=cb9bb30c-78c0-48c2-8aec-b3ddc91e3626" target="_blank">
+  <img src="./dashboard_preview.jpg" alt="Click para abrir Dashboard Interactivo de Power BI" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);" />
+</a>
 ---
 
 ##  Estructura del Pipeline de Datos (R)
