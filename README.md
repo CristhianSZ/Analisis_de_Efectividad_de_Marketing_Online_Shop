@@ -14,7 +14,7 @@ Como pilar de reproducibilidad y transparencia en proyectos de ciencia de datos,
 
 ---
 
-## 📈 Ciclo de Vida de los Datos y Visualizaciones por Etapas
+##  Ciclo de Vida de los Datos y Visualizaciones por Etapas
 
 El proyecto sigue una progresión metodológica rigurosa de 6 niveles (La Raíz $\rightarrow$ Las Hojas), mapeada en archivos modulares de R. A continuación se presentan los gráficos correspondientes a cada etapa del ciclo de vida:
 
@@ -35,11 +35,11 @@ Gráfico de barras agrupado que ilustra la tasa de conversión por grupo de edad
 
 ---
 
-## 🖥️ Visualización Final: Dashboard en Power BI
+## ️ Visualización Final: Dashboard en Power BI
 
 Para facilitar la toma de decisiones ejecutivas por parte de directores y gerentes de marketing, los resultados estadísticos se integraron en un tablero interactivo y dinámico.
 
-*    🔗 **Acceso al Dashboard Interactivo:** <a href="https://app.powerbi.com/reportEmbed?reportId=08b38379-5b1d-47c1-842b-bcd897e7b3fe&autoAuth=true&ctid=cb9bb30c-78c0-48c2-8aec-b3ddc91e3626" target="_blank">Ver Dashboard de Power BI</a>
+*     **Acceso al Dashboard Interactivo:** <a href="https://app.powerbi.com/reportEmbed?reportId=08b38379-5b1d-47c1-842b-bcd897e7b3fe&autoAuth=true&ctid=cb9bb30c-78c0-48c2-8aec-b3ddc91e3626" target="_blank">Ver Dashboard de Power BI</a>
 
 ---
 
