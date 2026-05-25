@@ -69,36 +69,57 @@ Tras un perfilado inicial, se detectaron y corrigieron los siguientes problemas 
 #### Ingeniería de Características (Feature Engineering)
 Para enriquecer el análisis demográfico solicitado por Marketing, se creó la variable `AGE_GROUP`. Esta columna segmenta la edad en 4 categorías: 18-25, 26-40, 41-55 y 56+ para identificar con precisión qué generación responde mejor a los anuncios de video.
 
-Nota: Durante esta fase, se concluyó que los datos no siguen una distribución normal debido al fuerte sesgo positivo en las ventas. Por lo tanto, el análisis ha migrado de un enfoque paramétrico a uno no paramétrico, priorizando el uso de medianas y rangos intercuartílicos sobre los promedios simples.
+Nota: Durante esta fase, se concluyó que los datos no siguen una distribución normal debido al fuerte sesgo positivo en las ventas. Por lo tanto, el análisis ha migrado de un enfoque paramétrico a uno no paramétrico.
 
 ## 4. Etapa de Comprender los Datos (Perfilado/EDA)
-Una vez limpia la data, procedemos al Análisis Exploratorio de Datos (EDA) para entender la composición y granularidad de nuestra fuente. Dado el sesgo identificado en el `TURNOVER`, el Box-Plot (Diagrama de Caja) se ha seleccionado como nuestra herramienta analítica principal por las siguientes razones:
-- Muestra la Mediana: A diferencia de la media, la mediana no se deja engañar por los "grandes gastadores", proporcionando una visión real de la compra típica del usuario tras ver un anuncio.
-- Identifica Outliers Visualmente: Permite observar a los clientes VIP que gastan más de 400€ como puntos aislados, ayudando a Marketing a entender si el video atrae tráfico de "alto valor".
-- Compara Distribuciones: Al colocar el grupo de `VIDEO_AD = TRUE` frente al de FALSE, podemos verificar si el "cajón" de la distribución de video está posicionado más arriba, lo que indicaría una mayor disposición al gasto impulsada por el anuncio.
+Una vez limpia la data, procedemos al Análisis Exploratorio de Datos (EDA) para entender la composición y distribución de nuestra fuente.
 
-Este perfilado visual nos permite "darle voz a los datos" antes de proceder con las visualizaciones finales y los insights accionables para los stakeholders.
+#### 4.1 Análisis de Normalidad (Rigor Técnico)
+*   **Prueba de Shapiro-Wilk**: Se ejecutó una prueba de normalidad formal sobre la variable `TURNOVER`, arrojando un p-value de $p < 0.05$. Esto confirma de forma matemática que los datos **no siguen una distribución normal**, debido al fuerte sesgo positivo.
+*   **Justificación de Medidas**: Este resultado justifica el uso de **medianas y rangos intercuartílicos (IQR)** en lugar de medias para describir el comportamiento típico de compra.
+
+#### 4.2 Box-Plot de Gasto por Formato de Anuncio
+El Box-Plot se seleccionó como la herramienta principal para el perfilado visual del gasto:
+- Muestra la Mediana: €341 en Video vs €327 en Texto para los usuarios convertidos.
+- Identifica Outliers: Permite ver a los clientes de alto valor (gasto > €400) representados como puntos aislados.
+- Compara Distribuciones: Permite evaluar de un vistazo si el formato del anuncio desplaza hacia arriba el volumen de compra.
+
+## 4.5 Análisis de Relaciones (Nivel 3 - AED)
+En esta fase, analizamos la asociación y covariabilidad entre variables para identificar motores de negocio y evitar redundancias.
+
+#### I. Matriz de Correlación (Pearson)
+Convertimos las variables lógicas a numéricas (0/1) para evaluar las correlaciones lineales entre Edad, Gasto, Conversión, Video y Devoluciones. Esto confirmó una correlación positiva moderada entre `VIDEO_AD` y `CONVERTED`, pero una correlación nula entre la edad y el gasto.
+
+#### II. Análisis de Covariabilidad: Edad vs. Gasto (Scatter Plot)
+El gráfico de dispersión de Edad vs. `TURNOVER` mostró una enorme dispersión y una línea de tendencia prácticamente plana ($r \approx 0$). Esto evidenció que **la edad no es un predictor lineal del gasto del ticket**, justificando la exclusión de esta relación del dashboard ejecutivo.
+
+#### III. Pruebas de Chi-Cuadrado de Independencia ($\chi^2$)
+Dado que la conversión es categórica (binaria), aplicamos pruebas no paramétricas para comprobar si las tasas de conversión difieren significativamente entre grupos:
+*   **Conversión vs. Video Ad**: Confirmó que el video influye de manera estadísticamente significativa en la probabilidad de que un usuario compre ($p < 0.05$).
+*   **Conversión vs. Género**: Validó que la brecha a favor de la conversión masculina (+197% de incremento) es significativa ($p < 0.05$).
+*   **Conversión vs. Grupo de Edad**: Confirmó que la probabilidad de conversión varía significativamente entre grupos generacionales ($p < 0.05$).
 
 ## 5. Analizar y Visualizar (Darle Voz a los Datos)
 
-Objetivo de la etapa
-El propósito fundamental de esta fase es transformar el procesamiento de datos en una narrativa estratégica que permita al Equipo de Marketing decidir sobre la inversión publicitaria. El análisis busca determinar si los anuncios en video (VIDEO_AD) impulsan un retorno superior en conversiones y ventas frente a los formatos tradicionales, identificando nichos de alta rentabilidad por edad y género.
+Objetivo de la etapa:
+Transformar el procesamiento estadístico y de relaciones en una narrativa estratégica e interactiva para el Equipo de Marketing, justificando cada elemento visual en el entregable final.
 
 ### I. Indicadores de Alto Nivel (BANs)
-Para establecer el contexto del éxito comercial, el análisis comienza con las métricas clave del negocio procesadas tras la limpieza (QA):
+Respaldados explícitamente en el pipeline de R:
 - Volumen Total de Ventas: €80,8 mil (basado en 445 transacciones exitosas)
-- Tasa de Conversión General: 17,1% de los usuarios que interactuaron con el sitio
+- Tasa de Conversión General: 17,1%
 - Valor Promedio de Pedido (AOV): €182 por transacción
-- Impacto de Video vs. Texto: Mejora del +125% en la tasa de conversión cuando se utiliza el formato de video
+- Impacto de Video vs. Texto: Mejora del +125% en la tasa de conversión (23,3% con video vs 10,3% con texto)
 
-### II. Visualización de Distribución y Verdad Estadística (Box-Plot)
-Debido a que el volumen de compra (TURNOVER) no sigue una distribución normal y presenta un fuerte sesgo positivo, se seleccionó el Box-Plot para comparar los formatos:
-- Comprensión de la Mediana: A diferencia de la media, la mediana de €48 para video frente a €46 para texto proporciona una visión real de la compra típica, eliminando el "ruido" de los grandes gastadores
-- Segmento VIP: La visualización identifica a 44 clientes VIP con gastos superiores a €400 provenientes del grupo de video, representados como puntos aislados (outliers) que no deben ser eliminados, sino fidelizados
-- Validación Técnica: Se aplicó la prueba no paramétrica de Wilcoxon (p-value = 0.1068). Aunque el resultado muestra una tendencia visual positiva clara, estadísticamente el impacto se considera moderado, sugiriendo que el video influye parcialmente y requiere mayor escala para confirmar una causalidad absoluta.
+### II. Visualización e Inferencia Final (Wilcoxon y Barras Agrupadas)
+*   **La Sorpresa de los Seniors**: Tras confirmar la asociación con Chi-cuadrado, se generó un gráfico de barras agrupado de conversión (Edad x Video). Este revela de forma contundente que los Seniors tienen un 50.0% de conversión con video frente a 11.1% con texto.
+*   **Inferencia del Gasto (Prueba de Wilcoxon)**: Se evaluó si la diferencia de ticket promedio (+14€ en la mediana a favor del video) es significativa. El resultado arrojó un p-value de 0.1068. **Conclusión**: No hay diferencia significativa en el gasto del ticket inducida por el anuncio. El video ayuda a conseguir más clientes (conversión), pero no incrementa el valor de la compra individual.
 
-### III. Análisis de Segmentación Demográfica (4 Categorías)
-Utilizando la variable de ingeniería AGE_GROUP, se analizó la receptividad por generaciones:
-- Senior (65+ años): Presentan la mayor ganancia potencial con una tasa de conversión del 50% bajo el formato de video, frente a solo el 11,11% en texto
-- Joven Adulto / Millennials (26-40 años): Se consolidan como el segmento base con una conversión del 24,44% con video, demostrando ser el público más consistente
-- Impacto por Género: El video actúa como un potente amplificador en el segmento masculino, elevando su conversión de un 8,8% a un 26,1% (una mejora del +197%)
+---
+
+## 6. Las Hojas: Dashboard en Power BI e Insights Accionables
+Los resultados validados en R se estructuraron en un dashboard interactivo que permite filtrar por edad y género, traduciendo la estadística en 4 recomendaciones tácticas:
+1.  **Redirigir 30% del presupuesto de texto a video** en campañas dirigidas a hombres.
+2.  **Incrementar el presupuesto de video un 40%** para el segmento Senior.
+3.  **Implementar un programa de fidelización exclusivo** para los 42 clientes VIP del grupo de video.
+4.  **Mantener inversión de video estable los fines de semana** para Millennials (segmento base de conversión del 24.4%).

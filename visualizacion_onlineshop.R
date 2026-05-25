@@ -1,28 +1,39 @@
 # ==============================================================================
 # ETAPA 5: VISUALIZACIÓN DE RESULTADOS PARA MARKETING
+# Proyecto: Análisis de Efectividad de Campañas de Marketing
+# Stakeholder: Equipo de Marketing
+# Dataset: onlineshop_clean.csv
 # ==============================================================================
 
 datos_marketing <- read.csv("onlineshop_clean.csv")
-# 1. Preparar datos para la historia: Tasas de Conversión
+# 1. Preparar datos para la historia: Tasas de Conversión por Edad y Formato de Anuncio
 
-# Calcular la probabilidad real de éxito por grupo (margin = 1 calcula por filas/grupos)
-tabla_proporciones <- prop.table(table(datos_marketing$AGE_GROUP, datos_marketing$CONVERTED), margin = 1)
-df_conv <- as.data.frame(tabla_proporciones)
-df_conv <- df_conv[df_conv$Var2 == "1" | df_conv$Var2 == "TRUE", ] # Solo nos interesa el éxito
+# Calcular la probabilidad real de éxito por edad y anuncio (margin = c(1, 2) calcula por subgrupo)
+tabla_proporciones <- prop.table(table(datos_marketing$AGE_GROUP, datos_marketing$VIDEO_AD, datos_marketing$CONVERTED), margin = c(1, 2))
 
-# Transformar a porcentaje para el gráfico (multiplicar x 100)
-df_conv$Freq_Porcentaje <- df_conv$Freq * 100
+# Extraer el éxito (CONVERTED == TRUE / "TRUE") en porcentaje
+matriz_conv <- tabla_proporciones[, , "TRUE"] * 100
+colnames(matriz_conv) <- c("Texto", "Video")
 
-# 2. Gráfico de Barras: La "Sorpresa de los Seniors"
-# Usamos colores sobrios para no distraer
-barplot(df_conv$Freq_Porcentaje, 
-        names.arg = df_conv$Var1,
-        main = "Tasa de Conversión por Rango de Edad (%)",
-        col = "steelblue", 
+cat("\n--- Tasas de Conversión por Edad y Formato de Anuncio (%) ---\n")
+print(round(matriz_conv, 2))
+
+# 2. Gráfico de Barras Agrupado: Comparación de formatos por rango de edad
+# Transponemos la matriz para agrupar por rango de edad en el eje X
+barplot(t(matriz_conv), 
+        beside = TRUE,
+        main = "Tasa de Conversión por Rango de Edad y Formato de Anuncio",
+        xlab = "Grupo de Edad (Segmentos de Marketing)",
+        ylab = "Porcentaje de Usuarios Convertidos (%)",
+        col = c("skyblue", "darkblue"), 
         border = NA,
-        ylim = c(0, max(df_conv$Freq_Porcentaje) * 1.2), # Escala relativa dinámica
-        ylab = "% de Usuarios que Compraron")
+        legend.text = TRUE,
+        args.legend = list(x = "topright", bty = "n"),
+        ylim = c(0, max(matriz_conv) * 1.2)) # Escala relativa dinámica
+
 # 3. Prueba de Significancia No Paramétrica (Prueba de Wilcoxon)
 # ¿Es la diferencia de gasto (48€ vs 46€) real o azar?
 test_resultado <- wilcox.test(TURNOVER ~ VIDEO_AD, data = datos_marketing)
-print(test_resultado$p.value) # Si es < 0.05, el impacto del video es real
+cat("\n--- Prueba de Wilcoxon para TURNOVER según VIDEO_AD ---\n")
+print(test_resultado)
+cat(sprintf("p-value: %.4f\n", test_resultado$p.value)) # Si es < 0.05, el impacto del video es real
