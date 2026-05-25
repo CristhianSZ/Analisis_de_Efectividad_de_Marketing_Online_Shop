@@ -1,7 +1,7 @@
 # Análisis de Efectividad de Marketing: Online Shop
 
 > [!NOTE]
-> **Objetivo del Proyecto de Portafolio:** Este es un proyecto personal diseñado para evidenciar habilidades técnicas en programación (R), análisis estadístico riguroso (pruebas paramétricas y no paramétricas) y habilidades comunicativas orientadas a la toma de decisiones estratégicas por parte de stakeholders corporativos.
+> **Propósito del Proyecto:** Este es un proyecto personal desarrollado con el fin de poner en práctica lo aprendido al día en la capacitación de Operador en Análisis de Datos del **CFP 16** (Centro de Formación Profesional N° 16, Ciudad Autónoma de Buenos Aires), integrando programación en R, análisis estadístico descriptivo e inferencial y comunicación orientada a stakeholders.
 
 Este proyecto realiza un análisis exhaustivo de extremo a extremo (end-to-end) del comportamiento de compra y la efectividad de las campañas de marketing (anuncios de video vs. texto) para una tienda de comercio electrónico. El objetivo principal es proporcionar recomendaciones accionables al equipo de **Marketing** para optimizar la inversión publicitaria y mejorar las tasas de conversión.
 
@@ -37,7 +37,7 @@ Gráfico de barras agrupado que ilustra la tasa de conversión por grupo de edad
 
 ## ️ Visualización Final: Dashboard en Power BI
 
-*   🔗 **Acceso al Dashboard Interactivo (Haga clic en la imagen para abrir en otra pestaña):**
+*    **Acceso al Dashboard Interactivo (Haga clic en la imagen para abrir en otra pestaña):**
 
 <a href="https://app.powerbi.com/reportEmbed?reportId=08b38379-5b1d-47c1-842b-bcd897e7b3fe&autoAuth=true&ctid=cb9bb30c-78c0-48c2-8aec-b3ddc91e3626" target="_blank">
   <img src="./dashboard_preview.jpg" alt="Click para abrir Dashboard Interactivo de Power BI" width="100%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);" />
@@ -67,4 +67,4 @@ El proyecto está diseñado bajo una arquitectura modular y automatizada en **R*
 
 ##  Autor
 **Cristhian Rodrigo Sosa Zurita**  
-*Analista de Datos y Especialista en Marketing Analytics*
+*Analista de Datos*
