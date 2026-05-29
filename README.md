@@ -13,7 +13,7 @@ Este proyecto realiza un análisis exhaustivo de extremo a extremo (end-to-end) 
 
 ## Buenas Prácticas y Reproducibilidad
 
-Como pilar de reproducibilidad y transparencia en proyectos de ciencia de datos, el repositorio cuenta con un registro formal de cambios de la fuente de datos original:
+Como pilar de reproducibilidad y transparencia en proyectos de analisis de datos, el repositorio cuenta con un registro formal de cambios de la fuente de datos original:
 *    **Bitácora de Cambios:** Consúltala en [Log de Registro de Cambios_ Dataset onlineshop.docx](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/Log%20de%20Registro%20de%20Cambios_%20Dataset%20onlineshop.docx) para observar el historial de control de versiones y auditoría del dataset.
 
 ---
