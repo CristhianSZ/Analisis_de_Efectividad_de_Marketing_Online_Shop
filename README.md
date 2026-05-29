@@ -52,11 +52,11 @@ Gráfico de barras agrupado que ilustra la tasa de conversión por grupo de edad
 
 El proyecto está diseñado bajo una arquitectura modular y automatizada en **R**:
 
-1.  **Carga y Orquestación:** [datasetJunglivet.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/datasetJunglivet.R) (Ejecuta todo el pipeline secuencialmente).
-2.  **ETL y Saneamiento (Nivel 1):** [limpieza_onlineshop.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/limpieza_onlineshop.R) (Tratamiento de NAs, duplicados, ingeniería de características).
-3.  **Perfilado Estadístico (Nivel 2):** [perfilado_onlineshop.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/perfilado_onlineshop.R) (Shapiro-Wilk, Box-Plot y estadísticas descriptivas).
-4.  **Análisis de Relaciones (Nivel 3):** [relaciones_onlineshop.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/relaciones_onlineshop.R) (Matriz de correlación y pruebas Chi-cuadrado para conversión).
-5.  **Visualización e Inferencia (Nivel 4):** [visualizacion_onlineshop.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/visualizacion_onlineshop.R) (Prueba de Wilcoxon, gráficos de barra agrupados).
+1.  **Carga y Orquestación:** [ejecutar_pipeline.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/ejecutar_pipeline.R) (Ejecuta todo el pipeline secuencialmente).
+2.  **Fase 1 - ETL y Saneamiento:** [fase1_etl_limpieza.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/fase1_etl_limpieza.R) (Tratamiento de NAs, duplicados, ingeniería de características).
+3.  **Fase 2 - Perfilado Estadístico:** [fase2_perfilado_eda.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/fase2_perfilado_eda.R) (Shapiro-Wilk, Box-Plot y estadísticas descriptivas).
+4.  **Fase 3 - Análisis de Relaciones:** [fase3_analisis_relaciones.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/fase3_analisis_relaciones.R) (Matriz de correlación y pruebas Chi-cuadrado para conversión).
+5.  **Fase 4 - Visualización e Inferencia:** [fase4_visualizacion_inferencia.R](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/fase4_visualizacion_inferencia.R) (Prueba de Wilcoxon, gráficos de barra agrupados).
 6.  **Metodología Completa:** [procedimiento.Rmd](file:///c:/Users/Usuario/Documents/Cursos/Aprendiendo_R/Proyecto/procedimiento.Rmd) (Documento detallado de la metodología teórica y técnica).
 
 ---
